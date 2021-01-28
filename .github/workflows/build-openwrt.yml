@@ -11,9 +11,9 @@
 name: fate-x86
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
   watch:
     types: started
     
