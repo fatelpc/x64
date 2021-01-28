@@ -8,10 +8,15 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build OpenWrt
-
+name: fate-x86
 on:
-  repository_dispatch:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  watch:
+    types: started
+    
   workflow_dispatch:
     inputs:
       ssh:
